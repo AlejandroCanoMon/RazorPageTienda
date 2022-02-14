@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPageTienda.Data;
 
 namespace RazorPageTienda.Migrations
 {
     [DbContext(typeof(RazorPageTiendaContext))]
-    partial class RazorPageTiendaContextModelSnapshot : ModelSnapshot
+    [Migration("20220214215446_prueba2")]
+    partial class prueba2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
